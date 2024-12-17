@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.hero {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn {
+  background-color: #ff6f61;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.hero .btn:hover {
+  background-color: #e05a4f;
+}
+
+.how-it-works {
+  background-color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+}
+
+.step {
+  max-width: 300px;
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
