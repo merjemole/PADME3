@@ -7,198 +7,153 @@
 
 body {
   font-family: 'Playfair Display', serif;
-  background-color: #f5f5f5; /* Ljus grå bakgrund, ren och sofistikerad */
-  color: #333; /* Mjuk textfärg */
+  background-color: #FFFDF4; /* Ljus bakgrund */
+  color: #333; /* Neutral färg för text */
   line-height: 1.6;
-  font-size: 16px;
-  text-rendering: optimizeLegibility;
 }
 
-/* Container */
 .container {
   width: 90%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 /* Header */
 header {
-  background-color: #ffffff;
-  color: #333;
-  padding: 3rem 0;
+  background-color: #FFFDF4;
+  color: #326A93; /* Huvudfärg */
+  padding: 1.5rem 0;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Liten skugga för elegans */
+  border-bottom: 1px solid #ddd;
 }
 
 header h1 {
-  font-size: 3.5rem;
-  font-weight: bold;
-  color: #333;
+  font-size: 2.5rem;
+  font-weight: normal;
   letter-spacing: 2px;
+  color: #326A93;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 nav ul li {
-  margin: 0 2rem;
+  margin: 0 1.5rem;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #326A93;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #000;
-  transform: translateY(-2px); /* Subtil hover-effekt */
+  color: #000; /* Svart för hover-effekt */
 }
 
 /* Hero Section */
 .hero {
-  background-image: url('https://via.placeholder.com/1500x800'); /* Använd en lyxig bild */
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
+  background-color: #FFFDF4;
+  color: #326A93;
   text-align: center;
-  padding: 10rem 2rem;
-  position: relative;
-  height: 80vh; /* Gör att hero-sektionen tar upp mer av skärmen */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3); /* Mörk overlay för bättre kontrast */
+  padding: 5rem 2rem;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .hero h2 {
-  font-size: 4rem;
-  font-weight: bold;
-  color: #ffffff;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-size: 3rem;
   margin-bottom: 1rem;
+  font-weight: normal;
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: #ffffff;
-  max-width: 800px;
+  margin-bottom: 2rem;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero .btn {
   display: inline-block;
-  background-color: #333;
-  color: #fff;
-  padding: 1rem 3rem;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border-radius: 50px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: #326A93;
+  color: #FFFDF4;
+  padding: 1rem 2.5rem;
   text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .hero .btn:hover {
   background-color: #000;
-  transform: translateY(-2px); /* Subtil lyftande effekt vid hover */
 }
 
 /* How it Works Section */
 .how-it-works {
-  background-color: #ffffff;
-  padding: 6rem 0;
+  background-color: #FFFDF4;
+  padding: 4rem 0;
   text-align: center;
 }
 
 .how-it-works h2 {
-  font-size: 3.5rem;
-  margin-bottom: 3rem;
-  font-weight: bold;
-  color: #333;
-  letter-spacing: 1.5px;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+  color: #326A93;
 }
 
 .steps {
   display: flex;
   justify-content: center;
-  gap: 4rem;
-  flex-wrap: wrap;
+  gap: 3rem;
 }
 
 .step {
   max-width: 300px;
-  text-align: center;
-  padding: 1rem;
 }
 
 .step h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
-  font-weight: 600;
-  color: #333;
+  color: #000;
 }
 
 .step p {
-  font-size: 1.2rem;
-  color: #666;
+  font-size: 1rem;
+  color: #333;
 }
 
 /* Footer */
 footer {
-  background-color: #ffffff;
-  color: #333;
+  background-color: #FFFDF4;
+  color: #326A93;
   text-align: center;
-  padding: 3rem 0;
-  border-top: 1px solid #e1e1e1;
-  font-size: 1.2rem;
+  padding: 2rem 0;
+  border-top: 1px solid #ddd;
 }
 
 footer a {
-  color: #333;
+  color: #326A93;
   text-decoration: none;
-  margin-left: 20px;
-  font-weight: 500;
+  margin-left: 15px;
+  font-size: 1rem;
   letter-spacing: 1px;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 footer a:hover {
   color: #000;
   text-decoration: underline;
-}
-
-/* Responsivitet */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero h2 {
-    font-size: 2.5rem;
-  }
-
-  .hero p {
-    font-size: 1.2rem;
-    max-width: 90%;
-  }
-
-  .steps {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .step {
-    max-width: 90%;
-  }
 }
