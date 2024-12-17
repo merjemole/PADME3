@@ -1,4 +1,3 @@
-// När användaren klickar på knappen för att generera en design
 document.getElementById('generateBtn').addEventListener('click', async function () {
     const prompt = document.getElementById('prompt').value.trim(); // Hämta användarens beskrivning
     const style = document.getElementById('style').value; // Hämta stilvalet
@@ -20,20 +19,27 @@ document.getElementById('generateBtn').addEventListener('click', async function 
         output.innerHTML = '<p>Genererar bilder, vänligen vänta...</p>';
 
         // Skicka förfrågan till API för att generera designen
-        const response = await fetch('https://api.recraft.ai/generate', {
+        const response = await fetch('https://external.api.recraft.ai/v1/images/generations', {
             method: 'POST',
             headers: {
-                'Authorization': 'Bearer TZ9sqYYcmuIdRKbm9A0lZs3O61LBe0DWEwalqoyVy4OB1dnaMwY2COZNvAXRzXKW',
+                'Authorization': 'Bearer TZ9sqYYcmuIdRKbm9A0lZs3O61LBe0DWEwalqoyVy4OB1dnaMwY2COZNvAXRzXKW', // Ersätt med din API-nyckel
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ prompt, style, number }),
+            body: JSON.stringify({
+                prompt: prompt,
+                style: style, // T.ex. 'digital_illustration'
+                number: number, // För flera bilder
+            }),
         });
 
+        // Logga svaret för att se om API:et svarar korrekt
         const data = await response.json();
+        console.log(data);  // Logga data för att se API-svaret
 
-        if (data.images && data.images.length > 0) {
+        // Kontrollera om API:et skickade tillbaka bilder
+        if (data.data && data.data.length > 0) {
             // Visa genererade bilder
-            output.innerHTML = data.images
+            output.innerHTML = data.data
                 .map((img) => `<img src="${img.url}" alt="Genererad Bild" style="max-width: 100%; margin: 10px 0;">`)
                 .join('');
         } else {
