@@ -33,6 +33,12 @@
     .image-container img {
       max-width: 100%;
       margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .image-container p {
+      font-size: 1rem;
+      color: #333;
     }
   </style>
 </head>
@@ -44,7 +50,7 @@
 
     <label for="style">Select Style:</label>
     <select id="style">
-      <option value="none">Default</option>
+      <option value="default">Default</option>
       <option value="realistic">Realistic</option>
       <option value="minimal">Minimal</option>
     </select>
@@ -55,7 +61,10 @@
     <button type="button" id="generateBtn">Generate</button>
   </form>
 
-  <div id="output" class="image-container"></div>
+  <section id="output" class="image-container">
+    <!-- Bilder kommer att genereras här -->
+  </section>
+
   <script src="ui.js"></script>
 </body>
 </html>
