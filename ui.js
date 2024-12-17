@@ -3,7 +3,7 @@ document.getElementById('generateBtn').addEventListener('click', async () => {
   const style = document.getElementById('style').value;
   const number = document.getElementById('number').value;
 
-  const apiKey = 'DIN_RECRAFT_API_KEY'; // Ersätt med din Recraft AI-nyckel
+  const apiKey = 'TZ9sqYYcmuIdRKbm9A0lZs3O61LBe0DWEwalqoyVy4OB1dnaMwY2COZNvAXRzXKW'; // Ersätt med din Recraft AI-nyckel
 
   try {
     // Skicka API-anrop
